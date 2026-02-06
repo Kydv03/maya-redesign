@@ -1,36 +1,155 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌿 Dr. Maya Reynolds, PsyD - Therapy Website Redesign
 
-## Getting Started
+A professional therapy website redesign for Dr. Maya Reynolds, PsyD - Licensed Clinical Psychologist specializing in EMDR and trauma therapy in Santa Monica, CA.
 
-First, run the development server:
+## 🎯 Project Overview
+
+This project transforms a generic therapy website template into a personalized, client-focused website based on Dr. Maya Reynolds' professional profile. The redesign emphasizes her specialties in anxiety, trauma, EMDR therapy, and burnout treatment for high-achieving adults in Santa Monica.
+
+## 🎨 Design Transformation
+
+### **Color Palette**
+
+- **Primary:** Emerald Green (`#0f766e` to `#14b8a6`) - Trust, growth, calm
+- **Secondary:** Warm Amber (`#f97316` to `#fb923c`) - Warmth, energy approachability
+- **Neutrals:** Soft Gray (`#f9fafb` to `#6b7280`) - Balance, professionalism
+
+### **Typography**
+
+- Clean, modern sans-serif stack
+- Optimized for readability and professional tone
+- Consistent hierarchy throughout
+
+### **Content Strategy**
+
+All copy rewritten based on Dr. Maya's profile:
+
+- **Specialties:** Anxiety, Trauma/EMDR, Burnout & Perfectionism
+- **Approach:** Integrative, evidence-based (CBT, EMDR, mindfulness)
+- **Location:** Santa Monica, CA focus with local SEO
+- **Client Focus:** High-achieving adults and professionals
+
+## 🚀 Tech Stack
+
+| Technology       | Purpose                                   |
+| ---------------- | ----------------------------------------- |
+| **Next.js 14**   | App Router, Server Components             |
+| **Tailwind CSS** | Utility-first styling & responsive design |
+| **TypeScript**   | Type safety & better developer experience |
+| **React**        | Component-based architecture              |
+| **Vercel**       | Deployment & hosting                      |
+
+## 📁 Project Structure
+
+dr-maya-redesign/
+├── app/
+│ ├── layout.tsx # Root layout with metadata
+│ ├── page.tsx # Complete homepage (all sections)
+│ ├── globals.css # Global styles & Tailwind
+│ └── components/
+│ └── ScrollAnimation.tsx
+├── public/
+│ ├── maya.jpg # Therapist photo
+│ ├── maya-office1.jpg # Office image
+│ ├── special-anxiety.jpg # Service icons
+│ └── ... # Additional images
+├── tailwind.config.js # Custom theme configuration
+└── package.json
+
+text
+
+### **Key Sections**
+
+<div align="center">
+  <img src="./public/screenshots/hero-section.png" width="45%" alt="Hero Section">
+  <img src="./public/screenshots/services-section.png" width="45%" alt="Services">
+</div>
+
+## 🎯 Key Features
+
+### **1. Content Redesign**
+
+- All copy derived from therapist's professional profile
+- SEO-optimized for "Santa Monica therapist" keywords
+- Clear service descriptions (EMDR, trauma therapy, anxiety treatment)
+
+### **2. Visual Design**
+
+- Complete color theme overhaul
+- Professional, calming aesthetic
+- Consistent spacing and typography
+- Mobile-responsive layout
+
+### **3. User Experience**
+
+- Clear call-to-action buttons
+- Easy navigation
+- Accessible design standards
+- Fast loading performance
+
+### **4. New "Our Office" Section**
+
+- Showcases therapy environment
+- Highlights in-person/telehealth options
+- Builds trust through transparency
+
+## 🚀 Getting Started
+
+### **Local Development**
 
 ```bash
+# git repository
+git: https://github.com/Kydv03/maya-redesign
+
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Visit → http://localhost:3000
+
+🌐 Deployment
+Deployed on Vercel with automatic CI/CD:
+
+📋 Evaluation Criteria Met
+✅ Design & Theming
+Completely new color palette (replaced lilac theme)
+
+New typography system
+
+Consistent application across all elements
+
+Professional, therapy-appropriate aesthetic
+
+✅ Copywriting
+All content based on Dr. Maya's profile
+
+SEO optimization for local search
+
+Clear service descriptions (3+ specialties)
+
+Professional yet approachable tone
+
+✅ Images & Visuals
+All images replaced with theme-appropriate selections
+
+Professional therapist and office photos
+
+Images support section messaging
+
+Consistent visual style
+
+✅ Technical Implementation
+Next.js 14 with App Router
+
+Tailwind CSS for styling
+
+Responsive design (mobile/desktop)
+
+Clean, maintainable code structure
+
+👩‍💻 Author
+Khushi Yadav
+Frontend Developer
+GitHub: https://github.com/Kydv03
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
