@@ -56,15 +56,6 @@ dr-maya-redesign/
 ├── tailwind.config.js # Custom theme configuration
 └── package.json
 
-text
-
-### **Key Sections**
-
-<div align="center">
-  <img src="./public/screenshots/hero-section.png" width="45%" alt="Hero Section">
-  <img src="./public/screenshots/services-section.png" width="45%" alt="Services">
-</div>
-
 ## 🎯 Key Features
 
 ### **1. Content Redesign**
