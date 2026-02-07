@@ -4,30 +4,40 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       <ScrollAnimation>
-      <nav className="flex justify-between items-center px-16 py-6 bg-emerald-50">
-        <h1 className="text-3xl font-semibold tracking-tight text-gray-900">
-          Dr. Maya Reynolds, PsyD
-        </h1>
+  <nav className="flex justify-between items-center px-4 sm:px-8 md:px-16 py-6 bg-emerald-50">
+    <h1 className="text-xl sm:text-2xl md:text-3xl font-semibold tracking-tight text-gray-900">
+      Dr. Maya Reynolds, PsyD
+    </h1>
 
-        <div className="flex space-x-10 text-lg font-medium">
-          <a href="#" className="text-gray-800 hover:text-amber-700 transition">
-            About
-          </a>
-          <a href="#" className="text-gray-800 hover:text-amber-700 transition">
-            Services
-          </a>
-          <a href="#" className="text-gray-800 hover:text-amber-700 transition">
-            Office
-          </a>
-          <a href="#" className="text-gray-800 hover:text-amber-700 transition">
-            FAQs
-          </a>
-          <a href="#" className="text-gray-800 hover:text-amber-700 transition">
-            Contact
-          </a>
+    {/* Desktop Navigation */}
+    <div className="hidden lg:flex space-x-10 text-lg font-medium">
+      <a href="#" className="text-gray-800 hover:text-amber-700 transition">About</a>
+      <a href="#" className="text-gray-800 hover:text-amber-700 transition">Services</a>
+      <a href="#" className="text-gray-800 hover:text-amber-700 transition">Office</a>
+      <a href="#" className="text-gray-800 hover:text-amber-700 transition">FAQs</a>
+      <a href="#" className="text-gray-800 hover:text-amber-700 transition">Contact</a>
+    </div>
+
+    {/* Mobile Dropdown Menu */}
+    <div className="lg:hidden relative group">
+      <button className="flex flex-col justify-center items-center w-8 h-8 space-y-1.5 group">
+        <span className="block w-6 h-0.5 bg-gray-800 group-hover:rotate-45 group-hover:translate-y-2 transition-transform"></span>
+        <span className="block w-6 h-0.5 bg-gray-800 group-hover:opacity-0 transition-opacity"></span>
+        <span className="block w-6 h-0.5 bg-gray-800 group-hover:-rotate-45 group-hover:-translate-y-2 transition-transform"></span>
+      </button>
+
+      <div className="absolute right-0 mt-2 w-48 bg-emerald-50 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-all duration-200 z-10">
+        <div className="flex flex-col p-4 space-y-3">
+          <a href="#" className="text-gray-800 hover:text-amber-700 py-1 transition">About</a>
+          <a href="#" className="text-gray-800 hover:text-amber-700 py-1 transition">Services</a>
+          <a href="#" className="text-gray-800 hover:text-amber-700 py-1 transition">Office</a>
+          <a href="#" className="text-gray-800 hover:text-amber-700 py-1 transition">FAQs</a>
+          <a href="#" className="text-gray-800 hover:text-amber-700 py-1 transition">Contact</a>
         </div>
-      </nav></ScrollAnimation>
-
+      </div>
+    </div>
+  </nav>
+</ScrollAnimation>
       <ScrollAnimation>
   <section className="min-h-[700px] grid grid-cols-1 md:grid-cols-2 px-12 md:px-12 py-16 pb-0 gap-4 items-center bg-gradient-to-br from-emerald-50 to-amber-50">
     <div className="flex justify-center md:justify-start">
@@ -57,48 +67,53 @@ export default function Home() {
 </ScrollAnimation>
 
       <ScrollAnimation>
-        <section className="grid grid-cols-1 md:grid-cols-2">
-          <div className="bg-[#EDE5DA] flex flex-col">
-            <div className="space-y-8 flex flex-col justify-center text-left px-16 py-20 flex-grow">
-              <h2 className="text-5xl font-semibold text-gray-800 leading-snug">
-                A grounded, compassionate space to understand yourself more
-                deeply.
-              </h2>
+  <section className="grid grid-cols-1 md:grid-cols-2">
+    {/* Text Content Section - Stays on left */}
+    <div className="bg-[#EDE5DA] flex flex-col">
+      <div className="space-y-6 md:space-y-8 flex flex-col justify-center text-left px-6 sm:px-10 lg:px-16 py-10 md:py-16 lg:py-20 flex-grow">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-800 leading-tight md:leading-snug">
+          A grounded, compassionate space to understand yourself more deeply.
+        </h2>
 
-              <p className="text-md text-gray-700 leading-relaxed font-medium">
-                I work with adults who feel overwhelmed, anxious, or emotionally
-                on edge—even when everything looks "fine" on the surface. My
-                approach is warm, steady, and collaborative, helping you explore
-                both the emotional and physical layers of what you're
-                experiencing.
-              </p>
+        <div className="space-y-4 md:space-y-6">
+          <p className="text-base sm:text-lg text-gray-700 leading-relaxed font-medium">
+            I work with adults who feel overwhelmed, anxious, or emotionally
+            on edge—even when everything looks "fine" on the surface. My
+            approach is warm, steady, and collaborative, helping you explore
+            both the emotional and physical layers of what you're
+            experiencing.
+          </p>
 
-              <p className="text-md text-gray-700 leading-relaxed font-medium">
-                Together, we'll move at a thoughtful pace, using evidence-based
-                methods like CBT, EMDR, mindfulness, and body-based techniques
-                to create lasting, meaningful change in your daily life.
-              </p>
-            </div>
+          <p className="text-base sm:text-lg text-gray-700 leading-relaxed font-medium">
+            Together, we'll move at a thoughtful pace, using evidence-based
+            methods like CBT, EMDR, mindfulness, and body-based techniques
+            to create lasting, meaningful change in your daily life.
+          </p>
+        </div>
+      </div>
 
-            <div className="pt-6">
-              <a
-                href="#"
-                className="block w-full text-center border-t border-gray-800 pt-6 pb-6 tracking-wide text-sm font-medium text-gray-800 hover:bg-gray-800 hover:text-white transition-all duration-300"
-              >
-                LEARN ABOUT MY APPROACH →
-              </a>
-            </div>
-          </div>
+      {/* CTA Button */}
+      <div className="pt-4 md:pt-6">
+        <a
+          href="#"
+          className="block w-full text-center border-t border-gray-800 pt-4 md:pt-6 pb-4 md:pb-6 tracking-wide text-sm sm:text-base font-medium text-gray-800 hover:bg-gray-800 hover:text-white transition-all duration-300 active:bg-gray-900"
+        >
+          LEARN ABOUT MY APPROACH →
+        </a>
+      </div>
+    </div>
 
-          <div className="min-h-[700px]">
-            <img
-              src="/maya-office1.jpg"
-              alt="Therapy office"
-              className="w-full h-full object-cover"
-            />
-          </div>
-        </section>
-      </ScrollAnimation>
+    {/* Image Section - Stays on right */}
+    <div className="min-h-[400px] sm:min-h-[500px] md:min-h-[600px] lg:min-h-[700px]">
+      <img
+        src="/maya-office1.jpg"
+        alt="Therapy office"
+        className="w-full h-full object-cover"
+        loading="lazy"
+      />
+    </div>
+  </section>
+</ScrollAnimation>
 
       <ScrollAnimation>
         <section className="min-h-[600px] px-12 py-32 pb-0 mb-24 bg-gradient-to-b from-emerald-50 to-amber-10">
